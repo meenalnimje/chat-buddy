@@ -35,23 +35,20 @@ const Form = ({ type }) => {
       if (res.ok) {
         router.push("/");
       }
-
       if (res.error) {
         toast.error("Something went wrong");
       }
     }
-
     if (type === "login") {
       const res = await signIn("credentials", {
         ...data,
         redirect: false,
+        callbackUrl: "/chats",
       });
 
       if (res.ok) {
-        router.push("/chats");
-      }
-
-      if (res.error) {
+        router.push(res.url || "/chats");
+      } else if (res.error) {
         toast.error("Invalid email or password");
       }
     }
