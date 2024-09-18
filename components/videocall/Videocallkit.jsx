@@ -15,12 +15,13 @@ export default function Videocallkit({ chatId }) {
       "jwdijiw"
     );
     const zp = ZegoUIKitPrebuilt.create(kitToken);
+    const baseurl = window.location.origin;
     zp.joinRoom({
       container: element,
       sharedLinks: [
         {
           name: "personal link",
-          url: `http://localhost:3000/video-chat/${chatId}`,
+          url: `${baseurl}/video-chat/${chatId}`,
         },
       ],
       scenario: {
