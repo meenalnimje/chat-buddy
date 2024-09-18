@@ -43,11 +43,10 @@ const Form = ({ type }) => {
       const res = await signIn("credentials", {
         ...data,
         redirect: false,
-        callbackUrl: "/chats",
       });
 
       if (res.ok) {
-        router.push(res.url || "/chats");
+        router.push("/chats");
       } else if (res.error) {
         toast.error("Invalid email or password");
       }
