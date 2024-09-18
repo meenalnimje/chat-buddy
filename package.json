@@ -1,0 +1,48 @@
+{
+  "name": "chat-buddy",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^0.0.60",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@google/generative-ai": "^0.19.0",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^6.1.0",
+    "@nanostores/react": "github:ai/react",
+    "@zegocloud/zego-uikit-prebuilt": "^2.9.0",
+    "ai": "^3.3.37",
+    "bcryptjs": "^2.4.3",
+    "date-fns": "^3.2.0",
+    "mongoose": "^8.0.4",
+    "next": "14.0.4",
+    "next-auth": "^4.24.5",
+    "next-cloudinary": "^5.18.0",
+    "openai": "^4.61.0",
+    "pusher": "^5.2.0",
+    "pusher-js": "^8.4.0-rc2",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.49.3",
+    "react-hot-toast": "^2.4.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "middleware.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "meenal-nimje",
+  "license": "ISC"
+}
