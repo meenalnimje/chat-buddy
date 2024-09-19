@@ -109,6 +109,6 @@ Ensure you have the following installed on your system:
 
 5. **Testing:**
     click on [chat-buddy](https://chat-buddy-three.vercel.app/) and You can log in as a guest user or create your own account:
-    - Email: guest@gmail.com
+    - Email: guest2@gmail.com
     - Password: 0000
     Watch [Demo-video](https://youtu.be/P3k4BxuexJw) for the demo of the website and its features.
