@@ -46,10 +46,7 @@ const AIChat = () => {
       setLoading(false);
     }
   };
-
-  // Function to format AI response (adding line breaks, bullet points, etc.)
   const formatAIResponse = (response) => {
-    // Example formatting logic: Adding line breaks and bullet points
     return response
       .replace(/\* /g, "• ") // Replaces markdown-like bullet points with actual bullet points
       .replace(/\n/g, "<br>"); // Adds line breaks for better readability

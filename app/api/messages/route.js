@@ -64,62 +64,6 @@ export const POST = async (req) => {
   }
 };
 
-// export const PUT = async (req) => {
-//   try {
-//     await connectToDB();
-
-//     const { messageId, newText, currentUserId } = await req.json();
-
-//     // Find the message by its ID
-//     const message = await Message.findById(messageId);
-
-//     if (!message) {
-//       return new Response("Message not found", { status: 404 });
-//     }
-
-//     // Update the text of the message
-//     message.text = newText;
-//     await message.save();
-
-//     // Fetch updated chat and populate necessary fields
-//     const updatedChat = await Chat.findById(message.chat)
-//       .populate({
-//         path: "messages",
-//         model: Message,
-//         populate: { path: "sender seenBy", model: "User" },
-//       })
-//       .populate({
-//         path: "members",
-//         model: "User",
-//       })
-//       .exec();
-
-//     // Trigger Pusher to update all chat members in real-time
-//     await pusherServer.trigger(message.chat.toString(), "update-message", {
-//       messageId: messageId,
-//       newText: newText,
-//       chatId: message.chat,
-//     });
-
-//     // Optionally, you can also trigger a chat update event for all members
-//     updatedChat.members.forEach(async (member) => {
-//       try {
-//         await pusherServer.trigger(member._id.toString(), "update-chat", {
-//           id: message.chat,
-//           messages: updatedChat.messages,
-//         });
-//       } catch (err) {
-//         console.error(`Failed to trigger update-chat event`, err);
-//       }
-//     });
-
-//     return new Response(JSON.stringify(message), { status: 200 });
-//   } catch (err) {
-//     console.error(err);
-//     return new Response("Failed to edit message", { status: 500 });
-//   }
-// };
-
 export const PUT = async (req) => {
   try {
     await connectToDB();

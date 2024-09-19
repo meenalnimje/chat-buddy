@@ -59,4 +59,3 @@ export const POST = async (req, { params }) => {
   }
 };
 
-// update chat api with real time implementation

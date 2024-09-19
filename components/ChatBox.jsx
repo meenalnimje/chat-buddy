@@ -1,7 +1,7 @@
 import { format } from "date-fns";
 import { useRouter } from "next/navigation";
 
-// jisme side me jo menu hai , jisme dikhta hai kaunse chats aye hai kaunse nhi
+// show chats
 const ChatBox = ({ chat, currentUser, currentChatId }) => {
   console.log("current user form chat box", currentUser);
 
@@ -65,6 +65,7 @@ const ChatBox = ({ chat, currentUser, currentChatId }) => {
               }`}
             >
               {lastMessage?.text}
+              {!seen && <span className="green-dot"></span>}
             </p>
           )}
         </div>

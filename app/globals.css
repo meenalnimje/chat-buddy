@@ -125,6 +125,32 @@
 .chat-info {
   @apply flex gap-3;
 }
+.new-message {
+  background-color: #e0f7fa; /* Light blue background to indicate new message */
+  font-weight: bold; /* Make the font bold */
+  border-left: 4px solid #29b6f6; /* Add a border for visual emphasis */
+  padding-left: 8px; /* Add some padding for the border */
+  transition: background-color 0.3s ease;
+}
+
+.last-message.text-small-bold {
+  color: black; /* Ensure the text is bold and stands out */
+}
+.message-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.green-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #28a745; /* Green color */
+  border-radius: 50%;
+  margin-left: 10px; /* Space between text and dot */
+}
+
+
 
 .last-message {
   @apply w-[120px] sm:w-[250px] truncate;
@@ -169,7 +195,8 @@
 
 /* Chat Header */
 .chat-header {
-  @apply flex items-center gap-4 px-8 py-3 text-body-bold bg-green-800 rounded-tr-lg rounded-tl-lg;
+  @apply flex items-center gap-4 px-8 py-3 text-body-bold bg-white rounded-tr-lg rounded-tl-lg;
+  color: #185519
 }
 
 /* Chat Body */

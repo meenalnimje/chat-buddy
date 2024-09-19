@@ -7,6 +7,7 @@ import { CldUploadButton } from "next-cloudinary";
 import Link from "next/link";
 import Loader from "./Loader";
 import MessageBox from "./MessageBox";
+import VideoCallIcon from "@mui/icons-material/VideoCall";
 import { pusherClient } from "@lib/pusher";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
@@ -21,9 +22,6 @@ const ChatDetails = ({ chatId }) => {
 
   // Ref to scroll to the bottom
   const bottomRef = useRef(null);
-
-  // Ensure router is only used client-side
-  const router = useRouter();
 
   useEffect(() => {
     if (currentUser && chatId) getChatDetails();
@@ -114,7 +112,6 @@ const ChatDetails = ({ chatId }) => {
   }, [chat?.messages]);
 
   const handleCalling = (chatId) => {
-    // Ensure that the window object is available
     if (typeof window !== "undefined") {
       // Open the URL in a new tab
       window.open(`/video-chat/${chatId}`, "_blank");
@@ -159,7 +156,7 @@ const ChatDetails = ({ chatId }) => {
             onClick={(e) => handleCalling(chatId)}
             style={{ cursor: "pointer" }}
           >
-            Call
+            <VideoCallIcon />
           </div>
         </div>
 
