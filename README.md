@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Chat-Buddy is a real-time chat application designed to provide a free and secure communication platform. It supports 1-on-1 and group messaging and includes additional features such as AI bot interaction, video calls, and file sharing. This README outlines the setup process for the project and explains the technologies used and their purposes.[Deployedlink](https://chat-buddy-three.vercel.app/) . To know more about the website and features please refer to this syaytem design document. [doc](https://1drv.ms/w/c/e408dc5665e57bd9/ETw7Hf93LoNLnSIRokuLpHUB-uy0e8M4qR83ipoUBNc4Ow?e=JYhf79)
+Chat-Buddy is a real-time chat application designed to provide a free and secure communication platform. It supports 1-on-1 and group messaging and includes additional features such as AI bot interaction, video calls, and file sharing. This README outlines the setup process for the project and explains the technologies used and their purposes.[Deployedlink](https://chat-buddy-three.vercel.app/) . To know more about the website and features please refer to this system design document. [doc](https://1drv.ms/w/c/e408dc5665e57bd9/ETw7Hf93LoNLnSIRokuLpHUB-uy0e8M4qR83ipoUBNc4Ow?e=JYhf79)
 
 ---
 
