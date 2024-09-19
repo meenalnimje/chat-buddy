@@ -1,9 +1,9 @@
 
-# Chat-Buddy
+# Chat-Buddy 
 
 ## Introduction
 
-Chat-Buddy is a real-time chat application designed to provide a free and secure communication platform. It supports 1-on-1 and group messaging and includes additional features such as AI bot interaction, video calls, and file sharing. This README outlines the setup process for the project and explains the technologies used and their purposes.
+Chat-Buddy is a real-time chat application designed to provide a free and secure communication platform. It supports 1-on-1 and group messaging and includes additional features such as AI bot interaction, video calls, and file sharing. This README outlines the setup process for the project and explains the technologies used and their purposes.[link](https://chat-buddy-three.vercel.app/)
 
 ---
 
@@ -108,6 +108,7 @@ Ensure you have the following installed on your system:
     npm run dev
 
 5. **Testing:**
-    click on chat-buddy(link) and You can log in as a guest user or create your own account:
+    click on [chat-buddy](https://chat-buddy-three.vercel.app/) and You can log in as a guest user or create your own account:
     - Email: guest@gmail.com
     - Password: 0000
+    Watch [Demo-video](https://youtu.be/P3k4BxuexJw) for the demo of the website and its features.
